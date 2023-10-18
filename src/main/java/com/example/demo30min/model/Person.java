@@ -14,6 +14,15 @@ public class Person {
     private String place;
     private int mobile;
 
+    public Person() {
+    }
+
+    public Person(String name, String place, int mobile) {
+        this.name = name;
+        this.place = place;
+        this.mobile = mobile;
+    }
+
     public long getId() {
         return id;
     }
@@ -43,13 +52,6 @@ public class Person {
     }
 
     public void setMobile(int mobile) {
-        this.mobile = mobile;
-    }
-
-    public Person(long id, String name, String place, int mobile) {
-        this.id = id;
-        this.name = name;
-        this.place = place;
         this.mobile = mobile;
     }
 }
